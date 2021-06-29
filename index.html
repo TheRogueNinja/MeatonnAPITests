@@ -1,0 +1,48 @@
+<head>
+    This is Meaton Test API
+</head>
+<style>
+    table
+    {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+</style>
+<body>
+    <h1>Sample Calls to the API will be made on Button Click</h1>
+    <div>
+        <input type='text' id='userID'><br>
+        <button onclick="fetchApiResults(document.getElementById('userID').value)" id='apiTest'>Click Me!</button>
+    </div>
+    <div>
+        <table id='displayUI'>
+        </table>
+    </div>
+    <script src='app.js'></script>
+</body>
